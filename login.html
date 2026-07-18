@@ -8,6 +8,13 @@
   <body>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      const supabase = createClient(
+        'https://aprhepkvvrywoqkktnry.supabase.co',
+        'sb_publishable_PfXlbOrRvNso2IIbmvf4HQ_ACGBxkfg',
+      );
+    </script>
     <div id="login">
       <h1 id="title_login">로그인</h1>
       <table>
