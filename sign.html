@@ -3,43 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>게시판 과제</title>
-
+    <title>게시판과제</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div id="login">
-      <h1 id="title_login">로그인</h1>
-
+    <div id="signup">
+      <h1 id="title_signup">회원가입</h1>
       <table>
         <tr>
           <td>이메일</td>
-          <td>
-            <input type="text" id="email" />
-          </td>
+          <td><input type="text" id="email" /></td>
         </tr>
-
         <tr>
           <td>비밀번호</td>
-          <td>
-            <input type="password" id="pw" />
-          </td>
+          <td><input type="password" id="pw" /></td>
         </tr>
-
         <tr>
-          <td colspan="2">
-            <button id="login_btn">로그인</button>
-            <a href="/sign.html">
-              <button id="signup_page">회원가입</button>
-            </a>
+          <td>
+            <button id="signup_btn">회원가입</button>
           </td>
         </tr>
       </table>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
     <script>
       const supabaseclient = supabase.createClient(
         'https://aprhepkvvrywoqkktnry.supabase.co',
