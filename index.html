@@ -1,1 +1,43 @@
-<h1>성공</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판과제</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="board">
+      <h1 id="title_board">게시판</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+          </tr>
+        </thead>
+
+        <tbody id="board_list"></tbody>
+      </table>
+
+      <a href="write.html">
+        <button type="button">게시글 작성</button>
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+      const supabaseclient = supabase.createClient(
+        'https://aprhepkvvrywoqkktnry.supabase.co',
+        'sb_publishable_PfXlbOrRvNso2IIbmvf4HQ_ACGBxkfg',
+      );
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
